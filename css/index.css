@@ -13,13 +13,13 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
-}    
+}
 
 .top {
     background: rgba(0, 0, 0, 0.4);
-    min-width: 30%;
+    min-width: 40%;
     max-width: 100%;
-	margin-top: 80px;
+    margin-top: 80px;
     margin-left: 100px;
     margin-right: 100px;
     border-radius: 50px;
@@ -38,11 +38,12 @@ body {
     margin-top: 20px;
 }
 
-.top p{
+.top p {
     margin-top: 20px;
     color: whitesmoke;
 }
-.end{
+
+.end {
     display: flex;
     background: rgb(1, 1, 1, 0.4);
     height: 200px;
@@ -50,21 +51,21 @@ body {
     margin-top: 100px;
 }
 
-.end div{
+.end div {
     margin-left: 0 auto;
     margin-right: 0 auto;
     margin-top: auto;
     margin-bottom: auto;
 }
 
-.end div a{
+.end div a {
     font-size: 20px;
     text-decoration: none;
     color: whitesmoke;
 }
 
-.end div a:hover{
-    color: rgba(255, 192, 203, 0.123) ;
+.end div a:hover {
+    color: rgba(255, 192, 203, 0.123);
 }
 
 .btn {
@@ -80,22 +81,26 @@ body {
     animation: animal 4s infinite linear;
 }
 
-.btn img{
-	height: 40px;
-	width: 40px;
+.btn img {
+    height: 40px;
+    width: 40px;
 }
 
 @keyframes animal {
-    0%{
-      transform: rotate(0deg);
+    0% {
+        transform: rotate(0deg);
     }
-    100%{
-      transform: rotate(-360deg);
+
+    100% {
+        transform: rotate(-360deg);
     }
 }
 
-@media (max-width: 767px) {
+/* 在宽度小于768像素的设备上应用以下样式 */
+@media only screen and (max-width: 768px) {
     body {
-        font-size: 14px;
+        font-size: 16px;
     }
+
+    /*其他样式*/
 }
