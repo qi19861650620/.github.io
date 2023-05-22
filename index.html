@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页</title>
+  <link rel="stylesheet" href="css/index.css" type="text/css" />
+</head>
+
+<body>
+  <div class="top">
+    <em><img src="image/Vlog.jpg" alt=""></em>
+    <h2>Mr.齐</h2>
+    <p>我什么也不是，只是一个复制器...</p>
+    <br>
+  </div>
+  <div class="end">
+    <div>
+      <a href="index/xinxi.html">个人信息</a>
+    </div>
+    <div>
+      <a href="index/boke.html">博客</a>
+    </div>
+    <div>
+      <a href="index/photo.html">我的相册</a>
+    </div>
+    <div>
+      <a href="index/world.html" target="_blank">我的世界</a>
+    </div>
+  </div>
+  <audio id="bg-music" autoplay>
+    <source src="./music/Scopin_Kordhell.mp3" type="audio/mpeg">
+  </audio>
+  <button class="btn " onclick="togglebgMusic()">
+    <img src="./image/音符.png" alt="" />
+  </button>
+</body>
+
+<script>
+  // 获取音频标签对象
+  var bgMusic = document.getElementById("bg-music");
+
+  // 播放/暂停函数
+  function togglebgMusic() {
+    if (bgMusic.paused) {
+      bgMusic.play();
+    } else {
+      bgMusic.pause();
+    }
+  }
+</script>
+
+</html>
