@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二级菜单的第一种做方法</title>
+    <style>
+        *{margin:0;padding: 0;}
+        a{text-decoration: none;color: darkgray;}
+        ul li{list-style: none;}
+        .box{
+            width: 540px;
+            height: 50px;
+            background: #444;
+            margin: 0 auto;
+        }
+        .box ul li{float: left;}
+        .box ul li a{
+            
+            width: 90px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            display: inline-block;
+        }
+        .box ul li a:hover{
+            color: #fff;
+            background: coral;
+        }
+        .box2 {
+            width:90px;
+            position: absolute;
+            display:none;
+            background: rgba(119, 115, 65, 0.447);
+            color: rgb(206, 25, 25);
+
+        }
+       
+            .box  li:hover .box2{
+              display: block;
+                
+        } 
+        /*为什么 不能  直接 .box2:hover?*/
+        .box li :hover a{
+            background: #fff;
+                color: black;
+
+        }
+        /* 这种不行 可能是权重太低
+        .box2 :hover{
+            display: block;
+        } */
+        
+    </style>
+</head>
+<body>
+        <div class="box">
+            <ul>
+                <!-- a是内联元素 不能嵌套块元素 -->
+                <li><a href="#">产品介绍</a>
+                    <ul class="box2" >
+                        <li><a href="#">产品一</a></li>
+                        <li><a href="#">产品二</a></li>
+                        <li><a href="#">产品三</a></li>
+                        <li><a href="#">产品四</a></li>
+                        <li><a href="#">产品五</a></li>
+                    </ul>
+                
+                </li>
+            
+                     
+         
+                
+                <li><a href="#">服务介绍</a>
+                    <ul class="box2">
+                        <li><a href="#">服务一</a></li>
+                        <li><a href="#">服务二</a></li>
+                        <li><a href="#">服务三</a></li>
+                        <li><a href="#">服务四</a></li>
+                        <li><a href="#">服务五</a></li>
+                    </ul>
+                </li>
+               
+                    
+                
+                   
+                
+                <li><a href="#">成功案例  </a>
+                    <ul class="box2">
+                        <li><a href="#">成功案例一</a></li>
+                        <li><a href="#">成功案例二</a></li>
+                        <li><a href="#">成功案例三</a></li>
+                        <li><a href="#">成功案例四</a></li>
+                        <li><a href="#">成功案例五</a></li>
+                    </ul> 
+                
+                </li>
+                  
+                  
+              
+                <li><a hrf="#">关于我们</a>
+                    <ul class="box2">
+                        <li><a href="#">关于我们一</a></li>
+                        <li><a href="#">关于我们二</a></li>
+                        <li><a href="#">关于我们三</a></li>
+                        <li><a href="#">关于我们四</a></li>
+                        <li><a href="#">关于我们五</a></li>
+                    </ul> 
+                </li>
+                  
+                    
+                 
+                
+                <li><a href="#">在线演示 </a>
+                    <ul class="box2">
+                        <li><a href="#">在线演示一</a></li>
+                        <li><a href="#">在线演示二</a></li>
+                        <li><a href="#">在线演示三</a></li>
+                        <li><a href="#">在线演示四</a></li>
+                        <li><a href="#">在线演示五</a></li>
+                    </ul>
+                </li>
+                 
+                  
+                 
+               
+                <li><a href="#">联系我们 </a>
+                    <ul class="box2">
+                        <li><a href="#">联系我们一</a></li>
+                        <li><a href="#">联系我们二</a></li>
+                        <li><a href="#">联系我们三</a></li>
+                        <li><a href="#">联系我们四</a></li>
+                        <li><a href="#">联系我们五</a></li>
+                    </ul>  
+                </li>
+                 
+               
+            </ul>
+        </div>
+    
+</body>
+</html>
