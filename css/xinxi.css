@@ -90,3 +90,12 @@ button  img {
     height: 50px;
     width: 50px;
 }
+
+/* 在宽度小于768像素的设备上应用以下样式 */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    /*其他样式*/
+}
