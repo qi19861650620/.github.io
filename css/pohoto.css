@@ -1,0 +1,16 @@
+button {
+    height: 80px;
+    width: 80px;
+    border: none;
+    background: none;
+    border-radius: 50px;
+    position: fixed;
+    /*绝对定位*/
+    top: 2rem;
+    right: 2rem;
+}
+
+button  img {
+    height: 50px;
+    width: 50px;
+}
