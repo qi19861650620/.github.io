@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>生日烟火</title>
+  <link rel="stylesheet" href="../css/birthday.css">
 </head>
 <style>
   * {
@@ -28,7 +29,8 @@
     font-size: 50px;
     animation: example1 1s infinite linear;
   }
-  h2.two{
+
+  h2.two {
     background-color: none;
     font-size: 40px;
     animation: example2 1s infinite linear;
@@ -65,15 +67,24 @@
 
   @keyframes example1 {
 
-    from {color: rgb(129, 18, 173);}
+    from {
+      color: rgb(129, 18, 173);
+    }
 
-    to {color: rgb(198, 152, 156);}
+    to {
+      color: rgb(198, 152, 156);
+    }
 
   }
 
-  @keyframes example2{
-    from{color: rgb(31, 36, 109);}
-    to{color: aqua;}
+  @keyframes example2 {
+    from {
+      color: rgb(31, 36, 109);
+    }
+
+    to {
+      color: aqua;
+    }
   }
 
   @keyframes animal {
@@ -94,9 +105,9 @@
     </video>
 
     <div class="box">
-      <h2 class="one">永远发挥自己的光芒，加油</h2>
+      <h2 class="one" id="v1">永远发挥自己的光芒，加油</h2>
       <br>
-      <h2 class="two">生日快乐</h2>
+      <h2 class="two" id="v1">生日快乐</h2>
     </div>
   </div>
   <span class="btn" onclick="bgaudio()">
