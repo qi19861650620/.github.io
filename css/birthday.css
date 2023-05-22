@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  .box {
+    margin: 50px;
+    top: auto;
+    bottom: auto;
+    text-align: center;
+    background: none;
+    margin: none;
+    padding: none;
+  }
+
+  h2.one {
+    background-color: none;
+    font-size: 50px;
+    animation: example1 1s infinite linear;
+  }
+  h2.two{
+    background-color: none;
+    font-size: 40px;
+    animation: example2 1s infinite linear;
+  }
+
+  video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -9999;
+  }
+
+  .btn {
+    height: 50px;
+    width: 50px;
+    background: none;
+    border: none;
+    border-radius: 50px;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    animation: animal 5s infinite linear;
+  }
+
+  .btn img {
+    height: 50px;
+    width: 50px;
+  }
+
+  @keyframes example1 {
+
+    from {color: rgb(129, 18, 173);}
+
+    to {color: rgb(198, 152, 156);}
+
+  }
+
+  @keyframes example2{
+    from{color: rgb(31, 36, 109);}
+    to{color: aqua;}
+  }
+
+  @keyframes animal {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    /* PC端 */
+    #v1 {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    /* 移动端 */
+    #v1 {
+      width: 100%;
+      height: auto;
+      transform: rotate(90deg); /* 将视频旋转为横屏显示效果 */
+      transform-origin: center center; /* 设置视频旋转中心 */
+    }
+  }
