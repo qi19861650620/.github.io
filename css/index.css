@@ -1,149 +1,166 @@
+@font-face {
+  font-family: "UnidreamLED";
+  src: url('../font/UnidreamLED.ttf') format('truetype');
+}
+
 /*全局样式*/
 * {
-    margin: 0 auto;
-    padding: 0 auto;
-    box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
 }
 
 /*背景图片、显示方式、排版样式*/
 body {
-    min-height: 100vh;
-    min-width: 100vw;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /*背景图片*/
-    background: url("../image/BeiJing.jpg") no-repeat center center fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*隐藏溢出部分*/
-    overflow: hidden;
+  min-height: 100vh;
+  min-width: 100vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /*背景图片*/
+  background: url("../image/BeiJing.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*隐藏溢出部分*/
+  overflow: hidden;
 }
 
 /*主要内容区域*/
 .top {
-    background: rgba(0, 0, 0, 0.4);
-    /*圆角*/
-    border-radius: 50px;
-    /*宽度自适应*/
-    max-width: 100%;
-    /*边距*/
-    margin: 80px 100px;
-    padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  /*圆角*/
+  border-radius: 50px;
+  /*宽度自适应*/
+  max-width: 100%;
+  /*边距*/
+  margin: 80px 100px;
+  padding: 20px;
 }
+
 /*头像*/
 .top img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-top: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
 }
+
 /*标题*/
 .top h2 {
-    font-size: 30px;
-    color: whitesmoke;
-    margin-top: 20px;
+  font-size: 30px;
+  color: whitesmoke;
+  margin-top: 20px;
 }
-/*文字描述*/
-.top p {
-    margin-top: 20px;
-    color: whitesmoke;
+
+/*时间日期*/
+.upline{
+  padding: 0;
+  color: white;
 }
+.time {
+  font-family: "UnidreamLED";
+  font-size: 3rem;
+}
+
 /*导航栏*/
 .end {
-    display: flex;
-    background: rgb(1, 1, 1, 0.4);
-    height: 200px;
-    /*边距*/
-    margin: 100px 0 0 0;
-    /*子元素垂直居中*/
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  background: rgb(1, 1, 1, 0.4);
+  height: 200px;
+  /*边距*/
+  margin: 100px 0 0 0;
+  /*子元素垂直居中*/
+  justify-content: center;
+  align-items: center;
 }
 
 /*导航栏文字链接*/
 .end div a {
-    font-size: 20px;
-    text-decoration: none;
-    color: whitesmoke;
+  font-size: 20px;
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 .end div a:hover {
-    color: rgba(255, 192, 203, 0.123);
+  color: rgba(255, 192, 203, 0.123);
 }
 
 .btn {
-    height: 50px;
-    width: 50px;
-    background: none;
-    border: none;
-    border-radius: 50px;
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    cursor: pointer;
-    animation: animal 4s infinite linear;
+  height: 50px;
+  width: 50px;
+  background: none;
+  border: none;
+  border-radius: 50px;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  animation: animal 4s infinite linear;
 }
 
 .btn img {
-    height: 40px;
-    width: 40px;
+  height: 40px;
+  width: 40px;
 }
 
 @keyframes animal {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(-360deg);
-    }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 /* 在宽度小于768像素的设备上应用以下样式 */
 /* 移动端样式 */
 @media only screen and (max-width: 768px) {
-    body {
-      font-size: 16px;
-    }
-  
-    .top img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      margin-top: 10px;
-    }
-    .top h2 {
-      font-size: 24px;
-      margin-top: 10px;
-      color: whitesmoke;
-    }
-  
-    .top {
-      margin: 80px 20px;
-      padding: 40px;
-      max-width: 100%;
-      border-radius: 50px;
-      background: rgba(0, 0, 0, 0.4);
-    }
-  
-    .end {
-      background: rgba(1, 1, 1, 0.4);
-      height: 100px;
-      margin: 50px 0 0 0;
-    }
-    .end div {
-      display: flex;
-      flex-direction: row;
-      margin: 0 -10px;
-    }
-    .end div a {
-      font-size: 16px;
-      margin: 0 25px;
-      color: whitesmoke;
-      text-decoration: none;
-    }
-    .end div a:hover {
-      color: rgba(255, 192, 203, 0.123);
-    }
+  body {
+    font-size: 16px;
   }
+
+  .top img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+
+  .top h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: whitesmoke;
+  }
+
+  .top {
+    margin: 80px 20px;
+    padding: 40px;
+    max-width: 100%;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .end {
+    background: rgba(1, 1, 1, 0.4);
+    height: 100px;
+    margin: 50px 0 0 0;
+  }
+
+  .end div {
+    display: flex;
+    flex-direction: row;
+    margin: 0 -10px;
+  }
+
+  .end div a {
+    font-size: 16px;
+    margin: 0 25px;
+    color: whitesmoke;
+    text-decoration: none;
+  }
+
+  .end div a:hover {
+    color: rgba(255, 192, 203, 0.123);
+  }
+}
