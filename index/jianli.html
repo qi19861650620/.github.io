@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人信息</title>
+    <link rel="stylesheet" href="../css/jianli.css" />
+  </head>
+
+  <body>
+    <main class="main">
+      <div class="main_top">
+        <span class="head"> PERSONAL RESUME </span>
+      </div>
+      <!--个人信息-->
+      <div class="xinxi">
+        <dl class="xinxi_box">
+          <dt class="box_font">
+            <b>齐西硕</b>
+            <p class="box_list">
+              <span>求职岗位：前端工程师</span>
+              <span>菏泽</span>
+              <span>5k~10k</span>
+              <span>一个月内到岗</span>
+            </p>
+          </dt>
+          <dd>
+            <span class="dd_title dd-nianling">
+              <b>年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄：21</b>
+            </span>
+          </dd>
+          <dd>
+            <span class="dd_title dd_xingbie">
+              <b> 性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：男</b>
+            </span>
+          </dd>
+          <dd>
+            <span class="dd_title dd_huji">
+              <b>户&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;籍：汉</b>
+            </span>
+          </dd>
+          <dd>
+            <span class="dd_title dd_work">
+              <b>工作年限：应届生</b>
+            </span>
+          </dd>
+          <dd>
+            <span class="dd_title dd_phone">
+              <b>联系电话：19861650620</b>
+            </span>
+          </dd>
+          <dd>
+            <span class="dd_title dd_email">
+              <b>
+                邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：qi19861650620@qq.com
+              </b>
+            </span>
+          </dd>
+        </dl>
+        <div class="xinxi_img">
+          <img src="https://www.ycresume.com/images/edit/man.png" alt="" />
+        </div>
+      </div>
+      <!-- 简历介绍 -->
+      <div class="jianli">
+        <!-- 教育背景 -->
+        <div id="jiaoyu" class="jianli_box">
+          <div class="jianli_tit">
+            <div class="title_1">
+              <span>教育背景</span>
+            </div>
+            <div class="jianli_list">
+              <ul class="list_top">
+                <li>2018-09 ~ 2023-06</li>
+                <li class="time">
+                  <b>菏泽职业学院</b>
+                </li>
+                <li class="name">
+                  <b> 计算机应用技术(大专)</b>
+                </li>
+              </ul>
+              <div class="font_list">
+                <ul>
+                  <li>
+                    <strong>
+                      主修课程：Java、Pyhton、HTML5、SQL
+                      Server2012、网络安全技术与实训、多媒体应用技术、云计算与大数据、软件测试、PS、PR、物联网技术基础等主要课程。
+                    </strong>
+                  </li>
+                  <li>
+                    <strong>现已毕业，学信网可查</strong>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 技能特长 -->
+        <div id="jineng" class="jianli_box">
+          <div class="jianli_tit">
+            <div class="title_1">
+              <span>技能特长</span>
+            </div>
+            <div class="font_list" style="margin: 10px 20px">
+              <ul>
+                <li>
+                  利用GitHub搭建了两个个人网页：qixishuo.top
+                  和v1-qixishuo.top。由于GitHub是国外的，所以访问有点慢。
+                </li>
+                <li>对于Python有较大的兴趣，特因此买了一套书籍，在自学中。</li>
+              </ul>
+            </div>
+            <!-- <ul style="list-style: none;">
+              <li class="is_line">
+                <div class="is_bar">
+                  <div class="is_info">
+                    <div class="is_inner1"></div>
+                  </div>
+                  <span>擅长</span>
+                </div>
+                <b>HTML5</b>
+              </li>
+              <li>
+                <div class="is_bar">
+                  <div class="is_info">
+                    <div class="is_inner2"></div>
+                  </div>
+                  <span>熟练</span>
+                </div>
+                <span style="margin-top: 10px"> <b> Python </b></span>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+        <!-- 自我评价 -->
+        <div id="pingjia" class="jianli_box">
+          <div class="jianli_tit">
+            <div class="title_1">
+              <span>自我评价</span>
+            </div>
+            <div class="font_list">
+              <ul>
+                <li>
+                  <b>
+                    本人对于网络上的新奇事物较感兴趣，还注册了最近很火的Chatgpt账号。
+                  </b>
+                </li>
+                <li>
+                  <b>
+                    本人有浓厚的学习兴趣，注册很多的社交账号，CSDN、Leecode、GIthub、国内的Git仓库和慕课网等平台都有账号。
+                  </b>
+                </li>
+                <li>
+                  <b>
+                    离校后自己了解了前端开发，对于Web前端开发有浓厚的兴趣，目前在自学Javascript。
+                  </b>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <button id="back-btn">
+      <i class="fas fa-arrow-left">
+        <img src="../image/返回.png" alt="返回" />
+      </i>
+    </button>
+  </body>
+  <script>
+    const backBtn = document.getElementById("back-btn");
+
+    backBtn.addEventListener("click", function () {
+      history.back();
+    });
+  </script>
+</html>
