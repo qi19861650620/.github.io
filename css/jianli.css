@@ -1,0 +1,220 @@
+/*初始化样式*/
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(125deg, #2c3e50, #27ae60, #2980b9, #e74c3c, #8e44ad, #2c3e50);
+    background-size: 500%;
+    overflow: hidden;
+    animation: bgAnimation 10s linear infinite;
+}
+
+/*定义背景动画*/
+@keyframes bgAnimation {
+    0% {
+        background-position: 0% 100%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+.main {
+    width: 75%;
+    background-color: #ffffff9c;
+}
+
+.main .main_top {
+    background-color: midnightblue;
+}
+
+.main .head {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 22px;
+    padding-left: 25px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.main .xinxi {
+    display: flex;
+    padding: 15px 40px 5px;
+    position: relative;
+}
+
+
+
+.xinxi .xinxi_box {
+    width: 80%;
+    overflow: hidden;
+    color: #333;
+    font-size: 12px;
+}
+
+.xinxi .xinxi_img {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    z-index: 3;
+    -webkit-transform: translateY(-45%);
+    transform: translateY(-45%);
+    background-color: #f9f9f9;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+img {
+    vertical-align: top;
+}
+
+.xinxi .xinxi_box .box_font {
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: 1px solid #340beb;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+.xinxi .xinxi_box .box_font b {
+    float: left;
+    height: 46px;
+    line-height: 46px;
+    border-bottom: 5px solid #340beb;
+}
+
+.xinxi .xinxi_box .box_font .box_list {
+    float: left;
+    margin-left: 40px;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.xinxi .xinxi_box .box_font .box_list span {
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 14px;
+    border-right: 2px solid #000;
+    white-space: nowrap;
+}
+
+.xinxi .xinxi_box dd {
+    padding: 3px 0;
+    float: left;
+    min-width: 50%;
+    overflow: hidden;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.xinxi .xinxi_box dd .dd_title {
+    float: left;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    color: #000;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.xinxi .xinxi_box dd .dd_nianling {
+    font-family: qmfont !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.main .jianli {
+    margin: 10px 40px;
+    position: relative;
+}
+
+.main .jianli .jianli_box {
+    margin: 20px 0;
+    position: relative;
+    font-size: 14px;
+}
+
+.jianli .jianli_box .jianli_tit {
+    margin-top: 10px;
+}
+
+.jianli_box .jianli_tit .title_1 {
+    line-height: 20px;
+    height: 28px;
+    padding-bottom: 8px;
+    font-weight: 400;
+    color: #000;
+    font-size: 18px;
+    border-bottom: 2.5px solid #ad8b8b8a;
+    white-space: nowrap;
+}
+
+.jianli_box .jianli_tit .title_1 span {
+    font-weight: 700;
+    padding: 0 2px;
+    display: inline-block;
+    height: 29px;
+    border-color: rgb(21, 117, 191);
+    border-bottom: 4px solid #382491;
+}
+
+.jianli_list .list_top li {
+    float: left;
+    line-height: 1.6;
+    text-align: left;
+    font-weight: 700;
+}
+
+.list_top {
+    /* 弹性盒子，，平局分配 */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    overflow: hidden;
+    font-size: 14px;
+    list-style: none;
+}
+
+.font_list {
+    margin: 10px 20px;
+}
+
+button {
+    height: 80px;
+    width: 80px;
+    border: none;
+    background: none;
+    border-radius: 50px;
+    position: fixed;
+    /*绝对定位*/
+    top: 2rem;
+    right: 2rem;
+}
+
+button img {
+    height: 50px;
+    width: 50px;
+}
+
+/* 在宽度小于768像素的设备上应用以下样式 */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 12px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /*其他样式*/
+}
